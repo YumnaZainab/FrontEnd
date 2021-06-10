@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Recommendation</title>
+</head>
+<style>
+    legend {
+        background-color: #000;
+        color: rgb(120, 224, 190);
+        padding: 3px 6px;
+    }
+
+    .input {
+        margin: .4rem;
+    }
+
+    .styled {
+        line-height: 2.5;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
+        background-color: rgb(167, 172, 170);
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background: black;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>Choose your Trainer</legend>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <input type="radio" id="Ahmed" name="trainer">
+        <label for="Ahmed">1. Ahmed</label> &nbsp; &nbsp;
+        <img src="ahmed.jpg" alt="kick" style="width: 200px; height: 180px;">
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <input type="radio" id="Smith" name="trainer">
+        <label for="Smith">2. Smith</label> &nbsp; &nbsp;
+        <img src="smith.jpg" alt="kick" style="width: 200px; height: 180px;">
+        <br><br>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" id="Sara" name="trainer">
+        <label for="Sara">3. Sara</label> &nbsp; &nbsp;
+        <img src="sara.jpg" alt="kick" style="width: 200px; height: 180px;">
+        
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <input type="radio" id="Mike" name="trainer">
+        <label for="Mike">4. Mike</label> &nbsp; &nbsp;
+        <img src="mike.jpg" alt="kick" style="width: 200px; height: 180px;">
+        <br><br>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <input type="radio" id="Jennifer" name="trainer">
+        <label for="Jennifer">5. Jennifer</label> &nbsp; &nbsp;
+        <img src="jennifer.jpg" alt="kick" style="width: 200px; height: 180px;">
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <input type="radio" id="Saad" name="trainer">
+        <label for="Saad">6. Saad</label> &nbsp; &nbsp;
+        <img src="saad.jpg" alt="kick" style="width: 200px; height: 180px;">
+    </fieldset>
+
+    <br>
+    <div class="color" style="text-align: center">
+        <button class="styled" id="cancel" type="button" onclick="level()">Back</button> &nbsp; &nbsp;
+        &nbsp; &nbsp;
+        <button class="styled" id="register" type="button" onclick="level()">Register</button>
+    </div>
+    <script src="module.js"></script>
+</body>
+</html>

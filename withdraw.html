@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Withdrawal</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Times New Roman';
+        color: rgb(29, 27, 27);
+        font-size:larger;
+        background-image: url('grey.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .color{
+        background-color: rgb(84, 135, 158);  
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin: 1rem 3rem;
+        width: 31%;
+    }
+    .row{
+        display: flex;
+    }
+
+    .pretty{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pretty input{
+        margin: 1rem;
+    }
+
+    .styled {
+        line-height: 2.5;
+        font-size: 1rem;
+        cursor: pointer;
+        color:white;
+        text-shadow: 1px 1px 1px #000;
+        background-color: purple;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+    .styled:hover{
+        background: black;
+        transform: scale(1.1);    
+    }
+</style>
+
+<body>
+    <br><br>
+
+    <div class="container" style="text-align: center">
+        <div style="color: yellow;">
+            <h1>KARATE EXPERT</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images.png" alt="karate pic" style="width: 200px; height: 200px;">
+            </div>
+            <div class="column">
+                <img src="pic.jpg" alt="kick" style="width: 200px; height: 200px;">
+            </div>
+            <div class="column">
+                <img src="img.jpg" alt="block" style="width: 200px; height: 200px;">
+            </div>
+        </div>
+        
+        <div style="text-align: center">
+            <h2><u>Course Withdrawal</u></h2>
+        <div>
+           
+        <div  style="text-align: center" >
+            <form class="pretty" action="form.javascript">
+                <input type="text" name="LEVEL" placeholder="Enter Level: ">
+                <input type="text" name="COURSE" placeholder="Enter course name: ">
+            </form>
+        </div>
+
+        <div style="text-align: center">
+            <br>
+            <button class="styled" id="withdraw" type="button" onclick="withdraw()">Withdraw</button>
+        </div>
+        <script src="module.js"></script>     
+</body>
+</html>

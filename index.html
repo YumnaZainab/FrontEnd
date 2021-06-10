@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+    body{
+        color: rgb(29, 27, 27);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: x-large;
+        background-image: url('back.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .color {
+        color: yellow;
+    }
+
+    .styled {
+        line-height: 2.5;
+        font-size: 1rem;
+        cursor: pointer;
+        color:white;
+        text-shadow: 1px 1px 1px #000;
+        background-color: rgb(28, 224, 149);
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover{
+        background: green;
+        transform: scale(1.1);    
+    }
+</style>
+
+<body>
+    <div class="container">
+    <div style="text-align: right">
+        <img src="logos.jpg" alt="logo" style="width: 80px; height: 80px;">
+    </div>
+
+    <div class="color" style="text-align: center" >
+        <h1> &nbsp; &nbsp; KARATE EXPERT</h1>
+        <br><br>
+    </div>
+
+    <div style="text-align: center">
+        <h2><u>COURSE</u></h2><br>
+        <button class="styled" id="coursereg_button" type="button" onclick="select()">Course
+            Registration</button><br><br><br>
+        <button class="styled" id="coursewithdraw" type="button" onclick="select()">Course
+            Withdraw</button><br><br><br>
+    </div>
+</div>
+
+<script src="module.js"></script>
+</body>
+</html>

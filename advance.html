@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Level</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .color {
+        color: white;
+    }
+
+    .checkBox {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 2rem;
+        max-width: 35rem;
+        height: 35rem;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        justify-content: space-between;
+    }
+
+    .checkBox:hover {
+        transform: scale(1.1);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .videos {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 150%;
+        justify-content: center;
+    }
+
+    .Description {
+        font-size: 70%;
+        padding: 0rem 3rem;
+        margin-top: 0rem;
+    }
+
+    .videoHeading {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        font-size: 150%;
+        margin: 0.3rem;
+        max-height: 35px;
+    }
+
+    .selectLabel {
+        padding: 1rem;
+        background-color: deeppink;
+        cursor: pointer;
+    }
+
+    .styled {
+        line-height: 2.5;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
+        background-color: white;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background: deeppink;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="color" style="text-align: center">
+            <h1><u>Advance Level</u></h1>
+        </div>
+
+        <div class="videos" style="text-align: center">
+            <div class="checkBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eK--BhMzVy0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="videoHeading">
+                    <label for="kick">Kicks</label>
+                    <input type="checkbox" name="kick" id="kick">
+                </div>
+                <p class="Description">Physical strikes using the leg, in unison usually with an area of the knee or lower using the foot, heel, 
+                    tibia, ball of the foot, blade of the foot, toes or knee.</p>
+                <label class="selectLabel" for="kick">Select</label>
+            </div>
+
+            <div class="checkBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dlZiyuJtsp8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="videoHeading">
+                    <label for="punch">Punches</label>
+                    <input type="checkbox" name="punch" id="punch">
+                </div>
+                <p class="Description">Punching techniques in karate are called tsuki or zuki. 
+                    Contact is made with the first two knuckles (seiken).</p>
+                <label class="selectLabel" for="punch">Select</label>
+            </div>
+
+            <div class="checkBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iBwcFOQ6xPI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="videoHeading">
+                    <label for="block">Blocks</label>
+                    <input type="checkbox" name="block" id="block">
+                </div>
+                <p class="Description">Blocking is the act of stopping or deflecting an opponent's attack for the
+                    purpose of preventing injurious contact with the body.</p>
+                <label class="selectLabel" for="block">Select</label>
+            </div>
+
+            <div class="checkBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N-m9inQRs3Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="videoHeading">
+                    <label for="kata">Form (Kata)</label>
+                    <input type="checkbox" name="kata" id="kata">
+                </div>
+                <p class="Description">Kata is a Japanese word describing detailed patterns of movements practiced either solo or in pairs.</p>
+                <label class="selectLabel" for="kata">Select</label>
+            </div>
+
+            <div class="checkBox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DNjjMo_cgGY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="videoHeading">
+                    <label for="sparring">Sparrings</label>
+                    <input type="checkbox" name="sparring" id="sparring">
+                </div>
+                <p class="Description">Karate sparring, known as kumite, is a sort of exercise performed between at least two karate
+                    practitioners, using the techniques learned from the kihon and kata</p>
+                <label class="selectLabel" for="sparring">Select</label>
+            </div>
+        </div>
+        <div class="color" style="text-align: center">
+            <button class="styled" id="cancel" type="button" onclick="level()">Back</button> &nbsp; &nbsp;
+            &nbsp; &nbsp;
+            <button class="styled" id="submit" type="button" onclick="level()">Submit</button>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="module.js"></script>
+</body>
+
+</html>

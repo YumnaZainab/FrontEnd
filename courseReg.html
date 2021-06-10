@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Times New Roman';
+        color: white;
+        background-image: url('grey.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .color {
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin: 1rem 3rem;
+        width: 31%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .styled {
+        line-height: 2.5;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
+        background-color: rgb(28, 224, 149);
+        background-image: linear-gradient(to top left,
+                rgba(0, 0, 0, .2),
+                rgba(0, 0, 0, .2) 30%,
+                rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background: green;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <br><br>
+    <div class="container" style="text-align: center">
+        <div style="color: yellow;">
+            <h1>KARATE EXPERT</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images.png" alt="karate pic" style="width: 200px; height: 200px;">
+            </div>
+            <div class="column">
+                <img src="pic.jpg" alt="kick" style="width: 200px; height: 200px;">
+            </div>
+            <div class="column">
+                <img src="img.jpg" alt="block" style="width: 200px; height: 200px;">
+            </div>
+        </div>
+
+        <div class="color" style="text-align: center">
+            <br><br>
+            <div class="color">
+                <div style="text-align: center">
+                    <h2><u>Course Registration</u></h2>
+                    <br><br>
+                    <div>
+                        <button class="styled" id="Beginner" type="button" onclick="coursereg()">Beginner
+                            Level</button><br><br>
+                        <button class="styled" id="Medium" type="button" onclick="coursereg()">Medium
+                            Level</button><br><br>
+                        <button class="styled" id="Advance" type="button" onclick="coursereg()">Advance
+                            Level</button><br><br><br>
+                        <button class="styled" type="button" onclick="location.href='index.html'">Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <script src="module.js"></script>
+</body>
+
+</html>
